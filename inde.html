@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <div class="app">
+ 
+    <!-- DECORATIVE elements — position: absolute inside position: relative .app -->
+    <div class="deco-dot" style="width:8px;height:8px;top:60px;right:200px;"></div>
+    <div class="deco-dot" style="width:5px;height:5px;top:120px;right:160px;"></div>
+    <div class="deco-dot" style="width:6px;height:6px;bottom:120px;right:80px;"></div>
+ 
+ 
+    <!-- ① NAVBAR — display: flex -->
+    <nav class="navbar">
+      <div class="nav-menu-btn">☰</div>
+      <div class="nav-logo"><img src="./International_Pokémon_logo.svg.png" alt="img"></div>
+      <div class="nav-theme-btn">☀️</div>
+    </nav>
+ 
+
+    <div class="search-filter-row">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search for a Pokémon..."/>
+      </div>
+ 
+      <div class="filter-row">
+        <button class="filter-btn">Filter by types (1) &nbsp;⌄</button>
+        <div class="sort-btn">⇅</div>
+      </div>
+    </div>
+ 
+    
+    <div class="cards-row">
+ 
+    
+      <div class="poke-card grass">
+        
+        <div class="poke-number">#0908</div>
+        <div class="poke-heart">♡</div>
+        <div class="poke-type-icon">🌿</div>
+ 
+        <div class="card-img-area">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png" alt="Meowscarada"/>
+        </div>
+ 
+        <div class="card-info">
+          <div class="poke-name">Meowscarada</div>
+          <div class="card-bottom">
+            <div class="type-tag grass">🌿 Grass</div>
+            <div class="arrow-btn">→</div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Card 2 — Pawniard -->
+      <div class="poke-card dark">
+        <div class="poke-number">#0624</div>
+        <div class="poke-heart">♡</div>
+        <div class="poke-type-icon">⚙️</div>
+ 
+        <div class="card-img-area">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png" alt="Pawniard"/>
+        </div>
+ 
+        <div class="card-info">
+          <div class="poke-name">Pawniard</div>
+          <div class="card-bottom">
+            <div class="type-tag dark">⚙️ Dark / Steel</div>
+            <div class="arrow-btn">→</div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Card 3 — Houndoom -->
+      <div class="poke-card fire">
+        <div class="poke-number">#0229</div>
+        <div class="poke-heart">♡</div>
+        <div class="poke-type-icon">🔥</div>
+ 
+        <div class="card-img-area">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png" alt="Houndoom"/>
+        </div>
+ 
+        <div class="card-info">
+          <div class="poke-name">Houndoom</div>
+          <div class="card-bottom">
+            <div class="type-tag fire">🔥 Dark / Fire</div>
+            <div class="arrow-btn">→</div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Card 4 — Inkay -->
+      <div class="poke-card water">
+        <div class="poke-number">#0686</div>
+        <div class="poke-heart">♡</div>
+        <div class="poke-type-icon">💧</div>
+ 
+        <div class="card-img-area">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png" alt="Inkay"/>
+        </div>
+ 
+        <div class="card-info">
+          <div class="poke-name">Inkay</div>
+          <div class="card-bottom">
+            <div class="type-tag water">💧 Dark / Psychic</div>
+            <div class="arrow-btn">→</div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- ④ FEATURES ROW — display: flex -->
+    <div class="features-row">
+ 
+      <div class="feature-item">
+        <div class="feature-icon blue">🎯</div>
+        <div class="feature-text">
+          <h4>Explore</h4>
+          <p>Discover all your favorite Pokémon</p>
+        </div>
+      </div>
+ 
+      <div class="feature-item">
+        <div class="feature-icon green">🌿</div>
+        <div class="feature-text">
+          <h4>Filter</h4>
+          <p>Find Pokémon by types and abilities</p>
+        </div>
+      </div>
+ 
+      <div class="feature-item">
+        <div class="feature-icon yellow">⭐</div>
+        <div class="feature-text">
+          <h4>Collection</h4>
+          <p>Save and manage your collection</p>
+        </div>
+      </div>
+ 
+      <div class="feature-item">
+        <div class="feature-icon purple">👤</div>
+        <div class="feature-text">
+          <h4>Stats</h4>
+          <p>View stats and learn about Pokémon</p>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-ball">⊙</div>
+      <p>© 2024 Pokémon. All rights reserved.</p>
+    </div>
+ 
+  </div>
+ 
+  <script>
+    // Heart toggle
+    document.querySelectorAll('.poke-heart').forEach(heart => {
+      heart.addEventListener('click', () => {
+        heart.classList.toggle('liked');
+        heart.textContent = heart.classList.contains('liked') ? '♥' : '♡';
+      });
+    });
+  </script> 
+</body>
+</html>

@@ -4,173 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="app">
+     <div class="page">
  
-    <!-- DECORATIVE elements — position: absolute inside position: relative .app -->
-    <div class="deco-dot" style="width:8px;height:8px;top:60px;right:200px;"></div>
-    <div class="deco-dot" style="width:5px;height:5px;top:120px;right:160px;"></div>
-    <div class="deco-dot" style="width:6px;height:6px;bottom:120px;right:80px;"></div>
+   
+    <div class="bg-text">GAME</div>
  
+   
+    <div class="scroll-indicator">SCROLL</div>
+    <div class="scroll-line"></div>
  
-    <!-- ① NAVBAR — display: flex -->
+    
+    <div class="social-icons">
+      <div class="social-icon">𝕏</div>
+      <div class="social-icon">◎</div>
+      <div class="social-icon">f</div>
+    </div>
+ 
+   
+    <div class="side-text">SQUID GAME</div>
+ 
+   
     <nav class="navbar">
-      <div class="nav-menu-btn">☰</div>
-      <div class="nav-logo"><img src="./International_Pokémon_logo.svg.png" alt="img"></div>
-      <div class="nav-theme-btn">☀️</div>
+      <!-- Logo -->
+      <div class="nav-logo">
+        <span class="logo-squid">SQUID</span>
+        <span class="logo-game">GAME<span style="color:#e91e8c;font-size:16px;">+</span></span>
+      </div>
+ 
+     
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="active">Watch now</a></li>
+        <li><a href="#">Actors</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+ 
+
+      <div class="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
  
 
-    <div class="search-filter-row">
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search for a Pokémon..."/>
+    <section class="hero">
+ 
+
+      <div class="hero-left">
+ 
+
+        <div class="shape-cyan"></div>
+        <div class="shape-yellow"></div>
+ 
+        <h1 class="hero-title">
+          SQUID<br>
+          GAM<span class="pink">E</span>
+        </h1>
+ 
+        <p class="hero-desc">
+          Action / Thriller / Drama Series directed by Dong-hyuk Hwang<br>
+          Season 1: 9 Episodes
+        </p>
+ 
+
+        <div class="hero-btns">
+          <button class="btn-play">
+            <div class="play-circle">▶</div>
+            Play Now
+          </button>
+          <button class="btn-trailer">
+            ▷ &nbsp;Watch Trailer
+          </button>
+        </div>
       </div>
  
-      <div class="filter-row">
-        <button class="filter-btn">Filter by types (1) &nbsp;⌄</button>
-        <div class="sort-btn">⇅</div>
-      </div>
-    </div>
+
+      <div class="hero-right">
+
+        <div class="hero-glow"></div>
  
+        <img
+          class="hero-character"
+          src="./download (1).png"
+          alt="Squid Game character in pink suit"
+        />
+      </div>
+ 
+    </section>
+ 
+
+    <div class="video-section">
+      <div class="video-row">
+ 
+
+        <div class="video-card">
+          <img src="./eb4f466d68c5b1f148876774d32545f8.jpg" alt="Squid Game episode 1"/>
+          <div class="video-overlay"></div>
+
+          <div class="video-title">
+            <div class="series-label">SERIES</div>
+            <div class="series-name">SQUID <span class="pink">GAME</span></div>
+          </div>
     
-    <div class="cards-row">
- 
-    
-      <div class="poke-card grass">
-        
-        <div class="poke-number">#0908</div>
-        <div class="poke-heart">♡</div>
-        <div class="poke-type-icon">🌿</div>
- 
-        <div class="card-img-area">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png" alt="Meowscarada"/>
+          <div class="play-btn">▶</div>
         </div>
  
-        <div class="card-info">
-          <div class="poke-name">Meowscarada</div>
-          <div class="card-bottom">
-            <div class="type-tag grass">🌿 Grass</div>
-            <div class="arrow-btn">→</div>
-          </div>
+
+        <div class="video-card">
+          <img src="./49e4d6d6516b6a010e91e77d9dbe7991.jpg" alt="Squid Game episode 2"/>
+          <div class="video-overlay"></div>
+          <div class="play-btn">▶</div>
         </div>
+ 
+
+        <div class="video-card">
+          <img src="./b9c1715a78be7f83dd1d0c076c901e18.jpg" alt="Squid Game episode 3"/>
+          <div class="video-overlay"></div>
+          <div class="play-btn">▶</div>
+        </div>
+ 
       </div>
- 
-      <!-- Card 2 — Pawniard -->
-      <div class="poke-card dark">
-        <div class="poke-number">#0624</div>
-        <div class="poke-heart">♡</div>
-        <div class="poke-type-icon">⚙️</div>
- 
-        <div class="card-img-area">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png" alt="Pawniard"/>
-        </div>
- 
-        <div class="card-info">
-          <div class="poke-name">Pawniard</div>
-          <div class="card-bottom">
-            <div class="type-tag dark">⚙️ Dark / Steel</div>
-            <div class="arrow-btn">→</div>
-          </div>
-        </div>
-      </div>
- 
-      <!-- Card 3 — Houndoom -->
-      <div class="poke-card fire">
-        <div class="poke-number">#0229</div>
-        <div class="poke-heart">♡</div>
-        <div class="poke-type-icon">🔥</div>
- 
-        <div class="card-img-area">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png" alt="Houndoom"/>
-        </div>
- 
-        <div class="card-info">
-          <div class="poke-name">Houndoom</div>
-          <div class="card-bottom">
-            <div class="type-tag fire">🔥 Dark / Fire</div>
-            <div class="arrow-btn">→</div>
-          </div>
-        </div>
-      </div>
- 
-      <!-- Card 4 — Inkay -->
-      <div class="poke-card water">
-        <div class="poke-number">#0686</div>
-        <div class="poke-heart">♡</div>
-        <div class="poke-type-icon">💧</div>
- 
-        <div class="card-img-area">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png" alt="Inkay"/>
-        </div>
- 
-        <div class="card-info">
-          <div class="poke-name">Inkay</div>
-          <div class="card-bottom">
-            <div class="type-tag water">💧 Dark / Psychic</div>
-            <div class="arrow-btn">→</div>
-          </div>
-        </div>
-      </div>
- 
-    </div>
- 
-    <!-- ④ FEATURES ROW — display: flex -->
-    <div class="features-row">
- 
-      <div class="feature-item">
-        <div class="feature-icon blue">🎯</div>
-        <div class="feature-text">
-          <h4>Explore</h4>
-          <p>Discover all your favorite Pokémon</p>
-        </div>
-      </div>
- 
-      <div class="feature-item">
-        <div class="feature-icon green">🌿</div>
-        <div class="feature-text">
-          <h4>Filter</h4>
-          <p>Find Pokémon by types and abilities</p>
-        </div>
-      </div>
- 
-      <div class="feature-item">
-        <div class="feature-icon yellow">⭐</div>
-        <div class="feature-text">
-          <h4>Collection</h4>
-          <p>Save and manage your collection</p>
-        </div>
-      </div>
- 
-      <div class="feature-item">
-        <div class="feature-icon purple">👤</div>
-        <div class="feature-text">
-          <h4>Stats</h4>
-          <p>View stats and learn about Pokémon</p>
-        </div>
-      </div>
- 
-    </div>
- 
-    <!-- FOOTER -->
-    <div class="footer">
-      <div class="footer-ball">⊙</div>
-      <p>© 2024 Pokémon. All rights reserved.</p>
     </div>
  
   </div>
- 
-  <script>
-    // Heart toggle
-    document.querySelectorAll('.poke-heart').forEach(heart => {
-      heart.addEventListener('click', () => {
-        heart.classList.toggle('liked');
-        heart.textContent = heart.classList.contains('liked') ? '♥' : '♡';
-      });
-    });
-  </script> 
 </body>
 </html>
